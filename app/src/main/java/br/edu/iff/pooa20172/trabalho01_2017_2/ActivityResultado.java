@@ -15,10 +15,10 @@ public class ActivityResultado extends AppCompatActivity {
         Intent intent = getIntent();
 
         String nome = (String) intent.getSerializableExtra("nome");
-        Float salBruto = (float) intent.getSerializableExtra("salarioBruto");
-        Float inss = (float) intent.getSerializableExtra("inss");
-        Float sindicato = (float) intent.getSerializableExtra("sindicato");
-        Float salLiquido = (float) intent.getSerializableExtra("salarioLiquido");
+        double salBruto = (double) intent.getSerializableExtra("salarioBruto");
+        double inss = (double) intent.getSerializableExtra("inss");
+        double sindicato = (double) intent.getSerializableExtra("sindicato");
+        double salLiquido = (double) intent.getSerializableExtra("salarioLiquido");
 
 
         TextView tvNome = (TextView) findViewById(R.id.tvNome);

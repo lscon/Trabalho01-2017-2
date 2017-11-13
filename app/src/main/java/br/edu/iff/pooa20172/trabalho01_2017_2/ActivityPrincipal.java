@@ -27,15 +27,16 @@ public class ActivityPrincipal extends AppCompatActivity {
         calular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                float fValorHora = Float.parseFloat(valorHora.getText().toString());
-                float fHorasTrabalhadas = Float.parseFloat(horasTrabalhadas.getText().toString());
-                float salarioBruto, salarioLiquido, ir, inss, sindicato;
+                double fValorHora = Double.parseDouble(valorHora.getText().toString());
+                double fHorasTrabalhadas = Double.parseDouble(horasTrabalhadas.getText().toString());
+                double salarioBruto;
+                double salarioLiquido, ir, inss, sindicato;
 
                 salarioBruto = fValorHora * fHorasTrabalhadas;
 
-                ir = (float) (salarioBruto * 0.11);
-                inss = (float) (salarioBruto * 0.8);
-                sindicato = (float) (salarioBruto * 0.5);
+                ir = salarioBruto * 0.11;
+                inss = salarioBruto * 0.08;
+                sindicato = salarioBruto * 0.05;
 
                 salarioLiquido = salarioBruto - (ir + inss + sindicato);
 
