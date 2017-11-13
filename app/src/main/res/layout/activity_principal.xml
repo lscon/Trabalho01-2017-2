@@ -11,74 +11,29 @@
     tools:context="br.edu.iff.pooa20172.trabalho01_2017_2.ActivityPrincipal"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="1">
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etNome"
+        android:hint="Nome" />
 
-        <TextView
-            android:text="Nome:"
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            android:textStyle="normal|bold"
-            android:textAlignment="viewStart"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp" />
-
-        <EditText
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:layout_weight="1.06"
-            android:id="@+id/tvNome" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:id="@+id/tvSalariohora">
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etValorHora"
+        android:hint="Valor hora trabalhada" />
 
-        <EditText
-            android:layout_width="79dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="salário por hora:"
-            android:ems="10"
-            android:layout_weight="0.37"
-            android:textStyle="normal|bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="número de horas trabalhadas:"
-            android:ems="10"
-            android:id="@+id/editText3"
-            android:layout_weight="4.20"
-            android:textStyle="normal|bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tvHoras"
-            android:layout_weight="1" />
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edHorasTrabalhadas"
+        android:hint="Número de horas trabalhadas" />
 
     <Button
         android:text="Calcular"
